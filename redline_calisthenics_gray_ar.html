@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0d11">
+<title>REDLINE CALISTHENICS | Build Your Strength</title>
+<style>
+:root{--bg:#090a0d;--panel:#12151a;--panel2:#191c22;--red:#aeb4bd;--red2:#e1e5eb;--muted:#aaa1a6;--line:#30353d;--white:#f7f3f5;--green:#72e0a0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#171a1f 0,transparent 30%),var(--bg);color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.55}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.14;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,black,transparent 80%);z-index:-1}
+a{color:inherit;text-decoration:none}button,input,select{font:inherit}.wrap{width:min(1160px,92%);margin:auto}.topbar{position:sticky;top:0;z-index:20;background:#0b0d11e8;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff12}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:950;letter-spacing:1.5px;font-size:19px}.brand b{color:var(--red)}.navlinks{display:flex;gap:24px;color:#c7bdc2;font-size:13px}.navlinks a:hover{color:white}.navbtn,.btn{border:0;border-radius:10px;padding:12px 17px;background:var(--red);color:white;font-weight:800;cursor:pointer;box-shadow:0 8px 28px #aeb4bd30;transition:.25s}.navbtn:hover,.btn:hover{transform:translateY(-3px);background:var(--red2);box-shadow:0 12px 32px #aeb4bd55}.btn.secondary{background:#202329;border:1px solid #414750;box-shadow:none}.hero{padding:78px 0 58px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:40px;min-height:510px}.eyebrow{color:#c5cbd3;font-size:11px;font-weight:900;letter-spacing:3px;text-transform:uppercase}.hero h1{font-size:clamp(42px,6vw,76px);line-height:.98;letter-spacing:-3px;margin:18px 0}.hero h1 span{color:var(--red);text-shadow:0 0 32px #aeb4bd55}.hero p{color:#b8afb4;max-width:570px;font-size:16px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.hero-art{min-height:350px;position:relative;border:1px solid #4b515b;border-radius:28px;overflow:hidden;background:linear-gradient(145deg,#242830,#111318 58%,#090a0d);display:flex;align-items:center;justify-content:center;box-shadow:0 25px 80px #0008,inset 0 0 60px #aeb4bd12}.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid #c2c8d055;border-radius:50%;width:280px;height:280px;animation:spin 18s linear infinite}.hero-art:after{width:370px;height:370px;border-style:dashed;animation-direction:reverse;animation-duration:32s}.hero-symbol{font-size:130px;font-weight:1000;color:#fff;text-shadow:0 0 15px #aeb4bd,0 0 65px #aeb4bd;z-index:1;transform:skew(-9deg)}.art-label{position:absolute;bottom:22px;left:25px;font-size:11px;letter-spacing:3px;color:#b9c0c9;font-weight:900}.floating{position:absolute;top:25px;right:25px;background:#101216db;border:1px solid #71313e;border-radius:12px;padding:10px 13px;font-size:11px;color:#ffd9de;animation:float 4s ease-in-out infinite}@keyframes spin{to{transform:rotate(360deg)}}@keyframes float{50%{transform:translateY(-9px)}}@keyframes pulse{50%{box-shadow:0 0 0 12px #aeb4bd00}}section{padding:52px 0;scroll-margin-top:85px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:25px}.section-head h2{font-size:clamp(26px,4vw,38px);margin:7px 0 0;letter-spacing:-1px}.section-head p{color:var(--muted);margin:0;max-width:490px;font-size:13px}.grid{display:grid;gap:18px}.profile-grid{grid-template-columns:1fr 1fr}.card{background:linear-gradient(145deg,#171a20,#101318);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 12px 35px #0003;transition:.25s}.card:hover{border-color:#555d68;transform:translateY(-3px)}.card h3{margin:0 0 7px;font-size:18px}.muted{color:var(--muted);font-size:13px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}.field label{display:block;color:#d7cdd2;font-size:12px;font-weight:750;margin-bottom:7px}.field input,.field select{width:100%;background:#0b0d11;border:1px solid #382d34;border-radius:10px;color:white;padding:12px;outline:none}.field input:focus,.field select:focus{border-color:var(--red);box-shadow:0 0 0 3px #aeb4bd20}.full{grid-column:1/-1}.hint{font-size:11px;color:#8f858b;margin-top:10px}.result{background:linear-gradient(145deg,#22262d,#14171c);border:1px solid #555d68;border-radius:18px;padding:23px;min-height:100%}.result .big{font-size:34px;font-weight:950;color:#c2c8d0;line-height:1.1;margin:10px 0}.statrow{display:flex;gap:10px;flex-wrap:wrap;margin:17px 0}.stat{background:#0b0d1199;border:1px solid #ffffff13;border-radius:10px;padding:10px 12px;font-size:12px}.stat b{display:block;font-size:17px;color:white}.split{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.day{background:#151115;border:1px solid var(--line);border-radius:13px;padding:15px 12px;min-height:105px}.day strong{display:block;color:#c5cbd3;font-size:12px}.day span{display:block;font-weight:800;margin-top:8px;font-size:13px}.day small{color:var(--muted);font-size:11px}.plan-grid{grid-template-columns:repeat(2,1fr)}.workout{position:relative;overflow:hidden}.workout:after{content:attr(data-num);position:absolute;right:16px;top:0;color:#ffffff08;font-size:78px;font-weight:1000}.workout .tag{display:inline-block;background:#24282e;color:#c5cbd3;border:1px solid #4b515b;padding:4px 8px;border-radius:30px;font-size:10px;font-weight:850;margin-bottom:10px}.exercise-list{margin:15px 0 0;padding:0;list-style:none}.exercise-list li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px solid #ffffff0e;font-size:13px}.exercise-list li span:last-child{color:#c5cbd3;font-weight:800;white-space:nowrap}.nutrition-grid{grid-template-columns:repeat(4,1fr)}.meal{min-height:190px}.meal .emoji{font-size:28px;margin-bottom:10px}.meal h3{font-size:15px}.meal p{font-size:12px;color:#b7adb3}.note{border-left:3px solid var(--red);background:#1c2026;padding:14px 16px;border-radius:0 10px 10px 0;color:#d7cbd1;font-size:12px;margin-top:17px}.library-tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}.library-tools input,.library-tools select{background:#12151a;color:white;border:1px solid var(--line);border-radius:10px;padding:11px}.library{grid-template-columns:repeat(3,1fr)}.exercise-card{padding:17px}.exercise-card h3{font-size:15px}.exercise-card .meta{color:#c5cbd3;font-size:10px;font-weight:850;letter-spacing:1px;text-transform:uppercase}.exercise-card p{font-size:12px;color:#afa5ab;margin-bottom:0}.progress{display:grid;grid-template-columns:1fr 1fr;gap:18px}.progressbar{height:9px;background:#343a44;border-radius:20px;overflow:hidden;margin:10px 0}.progressbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#5c626c,#ff596f);border-radius:20px;transition:width .4s}.checklist label{display:flex;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid #ffffff0d;font-size:13px}.checklist input{accent-color:var(--red);width:16px;height:16px}.footer{border-top:1px solid var(--line);padding:28px 0;color:#8d8389;font-size:12px}.footer strong{color:#d0d5dc}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#24151b;border:1px solid #646c77;color:white;padding:12px 18px;border-radius:10px;opacity:0;transition:.3s;z-index:50;font-size:13px}.toast.show{opacity:1;transform:translate(-50%,0)}.hidden{display:none!important}
+@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:55px}.hero-art{min-height:260px}.profile-grid,.progress{grid-template-columns:1fr}.nutrition-grid{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:repeat(3,1fr)}.library{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}}
+@media(max-width:560px){.nav{height:62px}.brand{font-size:16px}.navbtn{padding:10px 12px;font-size:12px}.hero h1{letter-spacing:-2px}.hero{gap:25px}.form-grid,.plan-grid{grid-template-columns:1fr}.full{grid-column:auto}.split{grid-template-columns:repeat(2,1fr)}.nutrition-grid,.library{grid-template-columns:1fr 1fr}.card{padding:17px}.section-head{display:block}.section-head p{margin-top:10px}.hero-art{min-height:220px}.hero-symbol{font-size:100px}}
+
+body.rtl{direction:rtl;text-align:right}
+body.rtl .nav,body.rtl .section-head,body.rtl .hero-actions{direction:rtl}
+body.rtl .hero-art .art-label{left:auto;right:25px}
+body.rtl .hero-art .floating{right:auto;left:25px}
+body.rtl .exercise-list li{direction:rtl}
+body.rtl .note{border-left:0;border-right:3px solid var(--red);border-radius:10px 0 0 10px}
+body.rtl .field label{text-align:right}
+body.rtl .checklist label{direction:rtl}
+body.rtl ul{padding-right:18px;padding-left:0}
+body.rtl .brand{letter-spacing:.5px}
+#langToggle{background:#24282e;border:1px solid #68717d;box-shadow:none}
+#langToggle:hover{background:#343a44}
+@media(max-width:560px){body.rtl .hero-art .art-label{right:16px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap nav">
+<a class="brand" href="#home">RED<span style="color:var(--red)">LINE</span> <span style="font-weight:500;color:#b9adb4">CALISTHENICS</span></a>
+<nav class="navlinks"><a href="#builder">Your plan</a><a href="#nutrition">Nutrition</a><a href="#library">Exercises</a><a href="#progress">Progress</a></nav>
+<div style="display:flex;gap:9px;align-items:center"><button class="navbtn" id="langToggle" type="button" aria-label="Switch language">العربية</button><a class="navbtn" href="#builder">BUILD MY PLAN ↗</a></div>
+</div></header>
+<main>
+<div class="wrap hero" id="home">
+<div><div class="eyebrow">BODYWEIGHT TRAINING / NO LIMITS</div><h1>BUILD YOUR<br><span>OWN STRENGTH.</span></h1><p>A personal calisthenics space for stronger movement, better habits and steady progress. Enter your details to create a beginner-friendly training and food guide.</p><div class="hero-actions"><a class="btn" href="#builder">Create my program</a><a class="btn secondary" href="#library">Explore exercises</a></div></div>
+<div class="hero-art"><div class="floating">TRAIN SMART • STAY CONSISTENT</div><div class="hero-symbol">R</div><div class="art-label">STRENGTH IS BUILT, NOT GIVEN.</div></div>
+</div>
+<section id="builder"><div class="wrap">
+<div class="section-head"><div><div class="eyebrow">01 / PERSONAL SETUP</div><h2>Build your training plan</h2></div><p>Fill in your profile. Your plan adjusts its starting volume and exercise difficulty to your selected level and equipment.</p></div>
+<div class="grid profile-grid">
+<div class="card"><h3>Your profile</h3><p class="muted">Your information stays in this page; it is not sent to a server.</p>
+<div class="form-grid">
+<div class="field"><label for="weight">Weight (kg)</label><input id="weight" type="number" min="20" max="300" placeholder="e.g. 45"></div>
+<div class="field"><label for="height">Height (cm)</label><input id="height" type="number" min="100" max="230" placeholder="e.g. 160"></div>
+<div class="field"><label for="age">Age</label><input id="age" type="number" min="10" max="100" placeholder="e.g. 16"></div>
+<div class="field"><label for="level">Training level</label><select id="level"><option value="beginner">Beginner</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option></select></div>
+<div class="field"><label for="goal">Main goal</label><select id="goal"><option value="strength">Build strength</option><option value="muscle">Build muscle & strength</option><option value="skills">Learn calisthenics skills</option><option value="fitness">General fitness</option></select></div>
+<div class="field"><label for="equipment">Equipment</label><select id="equipment"><option value="none">No equipment</option><option value="bar">Pull-up bar</option><option value="bands">Resistance bands</option><option value="both">Bar + bands</option></select></div>
+<div class="field full"><label for="days">Training days per week</label><select id="days"><option value="3">3 days</option><option value="4">4 days</option><option value="5" selected>5 days</option></select></div>
+<div class="full"><button class="btn" id="generate" style="width:100%">GENERATE MY PERSONAL PLAN ↗</button><div class="hint">Tip: choose the level that matches your current ability, not the level you want to reach.</div></div>
+</div></div>
+<div class="result" id="result"><div class="eyebrow">YOUR STARTING DASHBOARD</div><div class="big" id="resultTitle">Your plan starts here.</div><p id="resultText" class="muted">Enter your details and press “Generate my personal plan” to see your suggested weekly split, exercise volume and nutrition guidance.</p><div class="statrow"><div class="stat"><b id="statLevel">—</b>Level</div><div class="stat"><b id="statDays">—</b>Days / week</div><div class="stat"><b id="statGoal">—</b>Goal</div></div><div class="note" id="safetyNote">Train with controlled technique, rest between sessions and stop if you feel sharp pain. This tool gives general fitness guidance, not a medical assessment.</div></div>
+</div>
+</div></section>
+<section><div class="wrap"><div class="section-head"><div><div class="eyebrow">02 / WEEKLY STRUCTURE</div><h2>Your training split</h2></div><p>A balanced week trains pushing, legs, pulling patterns, core and full-body coordination.</p></div>
+<div class="split" id="split"><div class="day"><strong>DAY 01</strong><span>Push</span><small>Chest • shoulders • triceps</small></div><div class="day"><strong>DAY 02</strong><span>Legs</span><small>Quads • glutes • calves</small></div><div class="day"><strong>DAY 03</strong><span>Pull</span><small>Back • biceps</small></div><div class="day"><strong>DAY 04</strong><span>Core</span><small>Abs • stability</small></div><div class="day"><strong>DAY 05</strong><span>Full body</span><small>Control • conditioning</small></div></div>
+</div></section>
+<section id="plan"><div class="wrap"><div class="section-head"><div><div class="eyebrow">03 / WORKOUT DETAILS</div><h2>Exercise prescription</h2></div><p>Start with clean repetitions. Finish most sets while you could still do about 2 more good reps.</p></div><div class="grid plan-grid" id="workouts"></div></div></section>
+<section id="nutrition"><div class="wrap"><div class="section-head"><div><div class="eyebrow">04 / FUEL YOUR BODY</div><h2>Nutrition & recovery</h2></div><p>Build meals around everyday foods, enough energy, protein, carbohydrates, healthy fats and variety.</p></div>
+<div class="grid nutrition-grid">
+<div class="card meal"><div class="emoji">🍳</div><h3>Breakfast</h3><p>Eggs or yogurt, bread or oats, fruit and milk.</p></div>
+<div class="card meal"><div class="emoji">🍗</div><h3>Lunch</h3><p>Chicken, fish, beans or lentils with rice, potatoes or bread and vegetables.</p></div>
+<div class="card meal"><div class="emoji">🍌</div><h3>Snack</h3><p>Fruit with yogurt, milk, nuts or a cheese sandwich.</p></div>
+<div class="card meal"><div class="emoji">🥔</div><h3>Dinner</h3><p>Eggs, tuna, lentils or chicken with potatoes, bread and vegetables.</p></div>
+</div>
+<div class="note"><b>Important:</b> This is a flexible meal guide, not a calorie-restricted diet. Weight, height and age alone cannot determine the right calories or whether a young person should gain or lose weight. If you are under 18, focus on regular balanced meals, growth, sleep and strength—not dieting or supplements. Ask a healthcare professional or registered dietitian for individual nutrition targets.</div>
+<div class="grid progress" style="margin-top:18px">
+<div class="card"><h3>Daily recovery basics</h3><ul class="muted" style="padding-left:18px"><li>Drink water regularly.</li><li>Eat regular meals and snacks when hungry.</li><li>Include a protein food in meals.</li><li>Sleep 8–10 hours if you are a teenager; adults generally need 7–9.</li><li>Take rest days seriously.</li></ul></div>
+<div class="card"><h3>Before and after training</h3><p class="muted"><b style="color:#fff">Before:</b> Have a normal meal or snack that sits comfortably, and warm up for 5–8 minutes.</p><p class="muted"><b style="color:#fff">After:</b> Have a balanced meal or snack, drink water and allow muscles to recover.</p></div>
+</div></div></section>
+<section id="library"><div class="wrap"><div class="section-head"><div><div class="eyebrow">05 / MOVEMENT LIBRARY</div><h2>Calisthenics exercise library</h2></div><p>Browse movements by muscle group and difficulty. Choose variations you can perform safely and with control.</p></div>
+<div class="library-tools"><input id="searchExercise" type="search" placeholder="Search exercises..."><select id="filterGroup"><option value="all">All muscle groups</option><option>Chest</option><option>Back</option><option>Shoulders</option><option>Arms</option><option>Core</option><option>Legs</option><option>Skills</option></select><select id="filterLevel"><option value="all">All levels</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></div>
+<div class="grid library" id="libraryGrid"></div></div></section>
+<section id="progress"><div class="wrap"><div class="section-head"><div><div class="eyebrow">06 / STAY CONSISTENT</div><h2>Weekly progress tracker</h2></div><p>Tick off sessions as you complete them. Consistency matters more than perfection.</p></div>
+<div class="card checklist"><div style="display:flex;justify-content:space-between;align-items:center"><h3>This week's sessions</h3><strong style="color:#d0d5dc" id="progressCount">0 / 5</strong></div><div class="progressbar"><i id="progressBar"></i></div><div id="checks"></div><button class="btn secondary" id="reset" style="margin-top:15px">Reset week</button></div></div></section>
+</main>
+<footer class="footer"><div class="wrap" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap"><span><strong>REDLINE CALISTHENICS</strong> — Train smart. Progress patiently.</span><span>Single-page personal fitness planner</span></div></footer>
+<div class="toast" id="toast">Your plan has been updated.</div>
+<script>
+const db = [
+{n:"Wall Push-ups",g:"Chest",l:"Beginner",e:"none",d:"A gentle pushing variation to learn body alignment and control."},
+{n:"Incline Push-ups",g:"Chest",l:"Beginner",e:"none",d:"Hands on a stable raised surface; keep your body in one line."},
+{n:"Knee Push-ups",g:"Chest",l:"Beginner",e:"none",d:"A modified push-up to build pressing strength."},
+{n:"Standard Push-ups",g:"Chest",l:"Beginner",e:"none",d:"Keep ribs controlled and lower with a steady tempo."},
+{n:"Close-grip Push-ups",g:"Arms",l:"Intermediate",e:"none",d:"A narrower hand position emphasizes the triceps."},
+{n:"Pike Push-ups",g:"Shoulders",l:"Intermediate",e:"none",d:"A shoulder-focused push variation; use a comfortable range."},
+{n:"Diamond Push-ups",g:"Arms",l:"Advanced",e:"none",d:"A demanding triceps variation; use an easier version if needed."},
+{n:"Bodyweight Squats",g:"Legs",l:"Beginner",e:"none",d:"Sit between your hips and keep your whole foot grounded."},
+{n:"Reverse Lunges",g:"Legs",l:"Beginner",e:"none",d:"Step back under control and keep the front knee comfortable."},
+{n:"Glute Bridges",g:"Legs",l:"Beginner",e:"none",d:"Drive through your feet and avoid over-arching your back."},
+{n:"Calf Raises",g:"Legs",l:"Beginner",e:"none",d:"Rise and lower slowly through a comfortable range."},
+{n:"Wall Sit",g:"Legs",l:"Beginner",e:"none",d:"Hold a comfortable squat position against a wall."},
+{n:"Single-leg Glute Bridge",g:"Legs",l:"Intermediate",e:"none",d:"Progression for glute strength; keep hips level."},
+{n:"Reverse Snow Angels",g:"Back",l:"Beginner",e:"none",d:"Lie face down and move arms slowly without forcing the shoulders."},
+{n:"Prone W Raises",g:"Back",l:"Beginner",e:"none",d:"Lift arms into a W shape while keeping your neck relaxed."},
+{n:"Prone Swimmers",g:"Back",l:"Intermediate",e:"none",d:"A floor-based shoulder and upper-back control drill."},
+{n:"Self-resisted Biceps Curl",g:"Arms",l:"Beginner",e:"none",d:"One hand provides gentle resistance to the other; move slowly."},
+{n:"Wrist Curls",g:"Arms",l:"Beginner",e:"none",d:"Use the opposite hand for light resistance; avoid pain."},
+{n:"Plank",g:"Core",l:"Beginner",e:"none",d:"Keep a straight line from shoulders to heels; breathe normally."},
+{n:"Dead Bug",g:"Core",l:"Beginner",e:"none",d:"Move opposite arm and leg while keeping the lower back controlled."},
+{n:"Reverse Crunch",g:"Core",l:"Beginner",e:"none",d:"Curl the pelvis gently; avoid swinging your legs."},
+{n:"Mountain Climbers",g:"Core",l:"Intermediate",e:"none",d:"Move one knee at a time while keeping shoulders stable."},
+{n:"Hollow Body Hold",g:"Core",l:"Intermediate",e:"none",d:"Use a bent-knee version first; keep the back comfortable."},
+{n:"Side Plank",g:"Core",l:"Intermediate",e:"none",d:"Start from bent knees if the full variation is too difficult."},
+{n:"Crow Pose",g:"Skills",l:"Intermediate",e:"none",d:"Balance practice; use a soft floor and avoid pressure if wrists hurt."},
+{n:"L-sit Tuck",g:"Skills",l:"Advanced",e:"none",d:"Requires arm support, shoulder strength and gradual progressions."},
+{n:"Pull-ups",g:"Back",l:"Intermediate",e:"bar",d:"Only with a properly installed, weight-rated pull-up bar."},
+{n:"Australian Rows",g:"Back",l:"Beginner",e:"bar",d:"Use a secure low bar designed for bodyweight rows."},
+{n:"Chin-ups",g:"Arms",l:"Intermediate",e:"bar",d:"A supinated-grip vertical pull using a secure pull-up bar."},
+{n:"Band Rows",g:"Back",l:"Beginner",e:"bands",d:"Anchor resistance bands only to a purpose-built secure anchor."}
+];
+const plans = {
+beginner:[
+["PUSH","Chest • shoulders • triceps",[["Incline or knee push-ups","3 × 6–10"],["Standard push-ups (if controlled)","2 × 4–6"],["Wall pike hold","2 × 15 sec"],["Close-grip wall push-ups","2 × 8–10"]]],
+["LEGS","Quads • glutes • calves",[["Bodyweight squats","3 × 10–12"],["Reverse lunges","2 × 6 each leg"],["Glute bridges","3 × 12"],["Calf raises","2 × 15"]]],
+["PULL","Upper back • arm control",[["Reverse snow angels","2 × 10"],["Prone W raises","2 × 10"],["Prone swimmers","2 × 8"],["Self-resisted biceps curls","2 × 10 each arm"]]],
+["CORE","Abs • stability",[["Dead bug","2 × 8 each side"],["Plank","3 × 15–25 sec"],["Reverse crunch","2 × 8–10"],["Side plank from knees","2 × 15 sec each side"]]],
+["FULL BODY","Movement • arms • conditioning",[["Incline push-ups","2 × 8"],["Squats","2 × 12"],["Glute bridges","2 × 12"],["Self-resisted curls","2 × 10"],["Bird dog","2 × 8 each side"]]]
+],
+intermediate:[
+["PUSH","Chest • shoulders • triceps",[["Standard push-ups","3 × 8–12"],["Pike push-ups","3 × 5–8"],["Close-grip push-ups","2 × 6–10"],["Slow negative push-ups","2 × 5"]]],
+["LEGS","Quads • glutes • calves",[["Tempo squats","3 × 12–15"],["Reverse lunges","3 × 8 each leg"],["Single-leg glute bridge","2 × 8 each leg"],["Calf raises","3 × 18"]]],
+["PULL","Upper back • arm control",[["Prone W raises","3 × 12"],["Reverse snow angels","3 × 12"],["Prone swimmers","2 × 12"],["Self-resisted biceps curls","3 × 12 each arm"]]],
+["CORE","Abs • stability",[["Plank","3 × 30–40 sec"],["Reverse crunch","3 × 12"],["Dead bug","3 × 10 each side"],["Side plank","2 × 20 sec each side"]]],
+["FULL BODY","Movement • arms • conditioning",[["Push-ups","2 × 8"],["Squats","2 × 15"],["Pike push-ups","2 × 6"],["Glute bridges","2 × 15"],["Bird dog","2 × 10 each side"]]]
+],
+advanced:[
+["PUSH","Chest • shoulders • triceps",[["Standard push-ups","4 × 12–15"],["Decline push-ups (stable surface)","3 × 8"],["Pike push-ups","3 × 8–10"],["Diamond push-ups","2 × 6–10"]]],
+["LEGS","Quads • glutes • calves",[["Tempo squats","4 × 15"],["Reverse lunges","3 × 12 each leg"],["Single-leg glute bridge","3 × 10 each leg"],["Single-leg calf raises","3 × 12 each leg"]]],
+["PULL","Upper back • arm control",[["Prone swimmers","3 × 15"],["Reverse snow angels","3 × 15"],["Prone W raises","3 × 12"],["Self-resisted biceps curls","3 × 15 each arm"]]],
+["CORE","Abs • stability",[["Hollow body hold","3 × 20–30 sec"],["Reverse crunch","3 × 15"],["Side plank","3 × 30 sec each side"],["Mountain climbers","3 × 20"]]],
+["FULL BODY","Movement • arms • conditioning",[["Push-ups","3 × 12"],["Squats","3 × 15"],["Pike push-ups","2 × 8"],["Reverse lunges","2 × 10 each leg"],["Plank","2 × 30 sec"]]]
+]
+};
+function uiText(s){return (typeof currentLanguage!=="undefined" && currentLanguage==="ar" && typeof translations!=="undefined")?(translations[s]||s):s;}
+function renderPlan(level,days,equipment){
+ let p=plans[level].slice(0,Number(days));
+ const names=["Friday","Saturday","Sunday","Monday","Tuesday"];
+ document.getElementById("workouts").innerHTML=p.map((x,i)=>`<article class="card workout" data-num="0${i+1}"><span class="tag">${uiText(names[i])} • ${uiText("DAY")} 0${i+1}</span><h3>${uiText(x[0])}</h3><p class="muted">${uiText(x[1])}</p><ul class="exercise-list">${x[2].map(a=>`<li><span>${uiText(a[0])}</span><span>${a[1]}</span></li>`).join("")}</ul></article>`).join("");
+ let splitNames=p.map(x=>x[0]);document.getElementById("split").innerHTML=splitNames.map((x,i)=>`<div class="day"><strong>${uiText("DAY")} 0${i+1}</strong><span>${uiText(x)}</span><small>${uiText(p[i][1])}</small></div>`).join("")+`<div class="day"><strong>${uiText("REST")}</strong><span>${uiText("Recovery")}</span><small>${currentLanguage==="ar"?"مشي خفيف / تمارين مرونة":"Easy walk / mobility"}</small></div>`;
+}
+function generate(){
+ const w=Number(document.getElementById("weight").value),h=Number(document.getElementById("height").value),age=Number(document.getElementById("age").value);
+ const level=document.getElementById("level").value,days=Number(document.getElementById("days").value),goal=document.getElementById("goal").value,equipment=document.getElementById("equipment").value;
+ if(!w||!h||!age||w<20||h<100||age<10||age>100){alert("Please enter a valid weight, height and age.");return;}
+ const labels={beginner:"Beginner",intermediate:"Intermediate",advanced:"Advanced"};
+ const goals={strength:"Strength",muscle:"Muscle + strength",skills:"Skills",fitness:"Fitness"};
+ document.getElementById("resultTitle").textContent=uiText("Your plan is ready.");
+ document.getElementById("resultText").textContent=currentLanguage==="ar"?`برنامج ${days} أيام بمستوى ${uiText(labels[level]).toLowerCase()} ويركز على ${uiText(goals[goal]).toLowerCase()}. استخدم الحصص أدناه كنقطة بداية وعدّلها حسب استشفائك.`:`A ${days}-day ${labels[level].toLowerCase()} plan focused on ${goals[goal].toLowerCase()}. Use the sessions below as a starting point and adjust to your recovery.`;
+ document.getElementById("statLevel").textContent=uiText(labels[level]);document.getElementById("statDays").textContent=days;document.getElementById("statGoal").textContent=uiText(goals[goal]);
+ const note=age<18?"Because you are under 18, use this as general exercise guidance: avoid weight-loss dieting, calorie targets and max-effort testing. Prioritize technique, regular meals, sleep and adult/coach support.":"Use this as general fitness guidance, not a medical assessment. If you have health concerns or pain, ask a qualified professional.";
+ document.getElementById("safetyNote").textContent=currentLanguage==="ar"?(age<18?"بما أن عمرك أقل من 18 سنة، استخدم هذا كإرشاد عام للتمارين. تجنب الحميات واختبارات الجهد القصوى، وركز على التقنية والوجبات المنتظمة والنوم ووجود إشراف مناسب.":"هذا إرشاد عام للياقة وليس تقييماً طبياً. إذا كانت لديك مخاوف صحية أو ألم، استشر مختصاً مؤهلاً."):note;
+ renderPlan(level,days,equipment);
+ document.getElementById("plan").scrollIntoView({behavior:"smooth"});
+}
+document.getElementById("generate").addEventListener("click",generate);
+function renderLibrary(){
+ const q=document.getElementById("searchExercise").value.toLowerCase(),g=document.getElementById("filterGroup").value,l=document.getElementById("filterLevel").value;
+ const equip=document.getElementById("equipment").value;
+ const list=db.filter(x=>(x.n.toLowerCase().includes(q)||x.d.toLowerCase().includes(q))&&(g==="all"||x.g===g)&&(l==="all"||x.l===l)&&(x.e==="none"||(x.e==="bar"&&(equip==="bar"||equip==="both"))||(x.e==="bands"&&(equip==="bands"||equip==="both"))));
+ document.getElementById("libraryGrid").innerHTML=list.map(x=>`<article class="card exercise-card"><div class="meta">${uiText(x.g)} • ${uiText(x.l)}</div><h3>${uiText(x.n)}</h3><p>${uiText(x.d)}</p></article>`).join("")||(currentLanguage==="ar"?'<div class="card muted">لا توجد تمارين مطابقة. جرّب خيارات بحث أو معدات أخرى.</div>':'<div class="card muted">No matching exercises. Try another filter or equipment option.</div>');
+}
+["searchExercise","filterGroup","filterLevel","equipment"].forEach(id=>document.getElementById(id).addEventListener("input",renderLibrary));
+const sessions=["Push session","Legs session","Pull session","Core session","Full body session"];
+function renderChecks(){document.getElementById("checks").innerHTML=sessions.map((s,i)=>`<label><input type="checkbox" class="sessionCheck" value="${i}"> ${uiText(s)}</label>`).join("");document.querySelectorAll(".sessionCheck").forEach(c=>c.addEventListener("change",updateProgress));updateProgress()}
+function updateProgress(){let n=document.querySelectorAll(".sessionCheck:checked").length;document.getElementById("progressCount").textContent=currentLanguage==="ar"?`${n} / 5 حصص`:`${n} / 5`;document.getElementById("progressBar").style.width=(n*20)+"%"}
+document.getElementById("reset").addEventListener("click",()=>{document.querySelectorAll(".sessionCheck").forEach(c=>c.checked=false);updateProgress()});
+renderChecks();renderLibrary();
+
+const translations = {
+"REDLINE CALISTHENICS":"ريدلاين كاليستينيكس",
+"Your plan":"برنامجك","Nutrition":"التغذية","Exercises":"التمارين","Progress":"التقدم",
+"BUILD MY PLAN ↗":"أنشئ برنامجي ↗",
+"BODYWEIGHT TRAINING / NO LIMITS":"تدريب بوزن الجسم / بلا حدود",
+"BUILD YOUR":"ابنِ",
+"OWN STRENGTH.":"قوتك بنفسك.",
+"A personal calisthenics space for stronger movement, better habits and steady progress. Enter your details to create a beginner-friendly training and food guide.":"مساحتك الخاصة للكاليستينيكس لبناء القوة وتحسين العادات والتقدم المستمر. أدخل بياناتك لإنشاء برنامج تدريب وتغذية مناسب لمستواك.",
+"Create my program":"أنشئ برنامجي",
+"Explore exercises":"استكشف التمارين",
+"TRAIN SMART • STAY CONSISTENT":"تدرّب بذكاء • واظب باستمرار",
+"STRENGTH IS BUILT, NOT GIVEN.":"القوة تُبنى ولا تُمنح.",
+"01 / PERSONAL SETUP":"01 / إعداد بياناتك",
+"Build your training plan":"أنشئ برنامجك التدريبي",
+"Fill in your profile. Your plan adjusts its starting volume and exercise difficulty to your selected level and equipment.":"أدخل بياناتك. سيضبط البرنامج عدد المجموعات وصعوبة التمارين وفق مستواك والمعدات المتاحة.",
+"Your profile":"ملفك الشخصي",
+"Your information stays in this page; it is not sent to a server.":"تبقى معلوماتك داخل هذه الصفحة ولا تُرسل إلى أي خادم.",
+"Weight (kg)":"الوزن (كغ)","Height (cm)":"الطول (سم)","Age":"العمر",
+"Training level":"مستوى التدريب","Beginner":"مبتدئ","Intermediate":"متوسط","Advanced":"متقدم",
+"Main goal":"هدفك الأساسي","Build strength":"زيادة القوة","Build muscle & strength":"بناء العضلات والقوة","Learn calisthenics skills":"تعلم مهارات الكاليستينيكس","General fitness":"اللياقة العامة",
+"Equipment":"المعدات","No equipment":"بدون معدات","Pull-up bar":"عقلة","Resistance bands":"أشرطة مقاومة","Bar + bands":"عقلة + أشرطة مقاومة",
+"Training days per week":"أيام التدريب في الأسبوع","3 days":"3 أيام","4 days":"4 أيام","5 days":"5 أيام",
+"GENERATE MY PERSONAL PLAN ↗":"أنشئ برنامجي الشخصي ↗",
+"Tip: choose the level that matches your current ability, not the level you want to reach.":"نصيحة: اختر المستوى الذي يناسب قدرتك الحالية، وليس المستوى الذي تطمح للوصول إليه.",
+"YOUR STARTING DASHBOARD":"لوحة البداية الخاصة بك","Your plan starts here.":"ابدأ برنامجك من هنا.",
+"Enter your details and press “Generate my personal plan” to see your suggested weekly split, exercise volume and nutrition guidance.":"أدخل بياناتك واضغط على «أنشئ برنامجي الشخصي» لعرض جدولك الأسبوعي والتمارين وإرشادات التغذية.",
+"Level":"المستوى","Days / week":"أيام / أسبوع","Goal":"الهدف",
+"Train with controlled technique, rest between sessions and stop if you feel sharp pain. This tool gives general fitness guidance, not a medical assessment.":"تمرّن بتقنية صحيحة، واسترح بين الحصص، وتوقف عند الشعور بألم حاد. يقدم هذا الموقع إرشادات عامة للياقة وليس تقييماً طبياً.",
+"02 / WEEKLY STRUCTURE":"02 / الجدول الأسبوعي","Your training split":"تقسيم حصص التدريب",
+"A balanced week trains pushing, legs, pulling patterns, core and full-body coordination.":"أسبوع متوازن لتدريب الدفع والرجلين والسحب والجذع وتناسق الجسم بالكامل.",
+"DAY 01":"اليوم 01","DAY 02":"اليوم 02","DAY 03":"اليوم 03","DAY 04":"اليوم 04","DAY 05":"اليوم 05",
+"Push":"دفع","Legs":"الرجلان","Pull":"سحب","Core":"الجذع","Full body":"الجسم بالكامل","Recovery":"استشفاء",
+"Chest • shoulders • triceps":"الصدر • الكتفان • الترايسبس","Quads • glutes • calves":"الفخذان • الأرداف • السمانة","Back • biceps":"الظهر • البايسبس","Abs • stability":"البطن • الثبات","Control • conditioning":"التحكم • اللياقة",
+"03 / WORKOUT DETAILS":"03 / تفاصيل التمارين","Exercise prescription":"تفاصيل التمارين",
+"Start with clean repetitions. Finish most sets while you could still do about 2 more good reps.":"ابدأ بتكرارات صحيحة. أنهِ معظم المجموعات وأنت قادر على أداء تكرارين إضافيين تقريباً.",
+"04 / FUEL YOUR BODY":"04 / غذاء جسمك","Nutrition & recovery":"التغذية والاستشفاء",
+"Build meals around everyday foods, enough energy, protein, carbohydrates, healthy fats and variety.":"اجعل وجباتك متنوعة من الأطعمة اليومية، مع طاقة كافية وبروتين وكربوهيدرات ودهون صحية.",
+"Breakfast":"الفطور","Eggs or yogurt, bread or oats, fruit and milk.":"بيض أو ياغورت، خبز أو شوفان، فاكهة وحليب.",
+"Lunch":"الغداء","Chicken, fish, beans or lentils with rice, potatoes or bread and vegetables.":"دجاج أو سمك أو فاصوليا أو عدس مع الأرز أو البطاطا أو الخبز والخضروات.",
+"Snack":"وجبة خفيفة","Fruit with yogurt, milk, nuts or a cheese sandwich.":"فاكهة مع ياغورت أو حليب أو مكسرات أو شطيرة جبن.",
+"Dinner":"العشاء","Eggs, tuna, lentils or chicken with potatoes, bread and vegetables.":"بيض أو تونة أو عدس أو دجاج مع البطاطا أو الخبز والخضروات.",
+"Important:":"مهم:","This is a flexible meal guide, not a calorie-restricted diet. Weight, height and age alone cannot determine the right calories or whether a young person should gain or lose weight. If you are under 18, focus on regular balanced meals, growth, sleep and strength—not dieting or supplements. Ask a healthcare professional or registered dietitian for individual nutrition targets.":"هذا دليل مرن للوجبات وليس حمية لتقليل السعرات. لا يكفي الوزن والطول والعمر وحدها لتحديد احتياجك أو ما إذا كان عليك زيادة الوزن أو إنقاصه. إذا كان عمرك أقل من 18 سنة، ركّز على الوجبات المتوازنة والنمو والنوم والقوة، وليس الحميات أو المكملات. استشر مختصاً صحياً لتحديد احتياجاتك الفردية.",
+"Daily recovery basics":"أساسيات الاستشفاء اليومي","Drink water regularly.":"اشرب الماء بانتظام.","Eat regular meals and snacks when hungry.":"تناول وجبات منتظمة ووجبات خفيفة عند الجوع.","Include a protein food in meals.":"أضف مصدراً للبروتين إلى وجباتك.","Sleep 8–10 hours if you are a teenager; adults generally need 7–9.":"نم 8–10 ساعات إذا كنت مراهقاً؛ ويحتاج البالغون عادةً إلى 7–9 ساعات.","Take rest days seriously.":"احترم أيام الراحة.",
+"Before and after training":"قبل التدريب وبعده","Before:":"قبل التدريب:","Have a normal meal or snack that sits comfortably, and warm up for 5–8 minutes.":"تناول وجبة أو وجبة خفيفة مناسبة، وقم بالإحماء لمدة 5–8 دقائق.","After:":"بعد التدريب:","Have a balanced meal or snack, drink water and allow muscles to recover.":"تناول وجبة متوازنة، واشرب الماء واترك عضلاتك تستعيد عافيتها.",
+"05 / MOVEMENT LIBRARY":"05 / مكتبة الحركات","Calisthenics exercise library":"مكتبة تمارين الكاليستينيكس",
+"Browse movements by muscle group and difficulty. Choose variations you can perform safely and with control.":"تصفح الحركات حسب العضلات ومستوى الصعوبة. اختر التمارين التي تستطيع أداءها بأمان وتحكم.",
+"All muscle groups":"كل العضلات","All levels":"كل المستويات","Search exercises...":"ابحث عن تمرين...",
+"06 / STAY CONSISTENT":"06 / واظب باستمرار","Weekly progress tracker":"متابعة التقدم الأسبوعي",
+"Tick off sessions as you complete them. Consistency matters more than perfection.":"ضع علامة على الحصص التي أنهيتها. الاستمرارية أهم من الكمال.",
+"This week's sessions":"حصص هذا الأسبوع","Push session":"حصة الدفع","Legs session":"حصة الرجلين","Pull session":"حصة السحب","Core session":"حصة الجذع","Full body session":"حصة الجسم بالكامل","Reset week":"إعادة ضبط الأسبوع",
+"Train smart. Progress patiently.":"تدرّب بذكاء. وتقدم بصبر.","Single-page personal fitness planner":"مخطط لياقة شخصي في صفحة واحدة",
+"Please enter a valid weight, height and age.":"يرجى إدخال وزن وطول وعمر صحيح.",
+"Your plan is ready.":"برنامجك جاهز.",
+"Beginner":"مبتدئ","Intermediate":"متوسط","Advanced":"متقدم",
+"Strength":"القوة","Muscle + strength":"العضلات والقوة","Skills":"المهارات","Fitness":"اللياقة",
+"beginner":"مبتدئ","intermediate":"متوسط","advanced":"متقدم",
+"Friday":"الجمعة","Saturday":"السبت","Sunday":"الأحد","Monday":"الاثنين","Tuesday":"الثلاثاء",
+"Rest":"راحة","DAY":"اليوم","PUSH":"دفع","LEGS":"الرجلان","PULL":"سحب","CORE":"الجذع","FULL BODY":"الجسم بالكامل",
+"Chest":"الصدر","Back":"الظهر","Shoulders":"الكتفان","Arms":"الذراعان","Core":"الجذع","Legs":"الرجلان","Skills":"المهارات",
+"Wall Push-ups":"ضغط على الحائط","Incline Push-ups":"ضغط مائل","Knee Push-ups":"ضغط على الركبتين","Standard Push-ups":"ضغط عادي","Close-grip Push-ups":"ضغط بقبضة ضيقة","Pike Push-ups":"ضغط بايك","Diamond Push-ups":"ضغط الماسة","Bodyweight Squats":"سكوات بوزن الجسم","Reverse Lunges":"اندفاع خلفي","Glute Bridges":"رفع الحوض","Calf Raises":"رفع السمانة","Wall Sit":"جلوس على الحائط","Single-leg Glute Bridge":"رفع الحوض برجل واحدة","Reverse Snow Angels":"ملاك الثلج العكسي","Prone W Raises":"رفع الذراعين بشكل W","Prone Swimmers":"سباحة أرضية","Self-resisted Biceps Curl":"ثني بايسبس بمقاومة اليد","Wrist Curls":"ثني الرسغ","Plank":"بلانك","Dead Bug":"تمرين الحشرة الميتة","Reverse Crunch":"كرنش عكسي","Mountain Climbers":"متسلق الجبل","Hollow Body Hold":"ثبات الجسم المجوف","Side Plank":"بلانك جانبي","Crow Pose":"وضعية الغراب","L-sit Tuck":"تحضير وضعية L-sit","Pull-ups":"عقلة","Australian Rows":"سحب أسترالي","Chin-ups":"عقلة بقبضة معكوسة","Band Rows":"سحب بالأشرطة",
+"A gentle pushing variation to learn body alignment and control.":"نسخة سهلة لتعلم استقامة الجسم والتحكم.","Hands on a stable raised surface; keep your body in one line.":"ضع يديك على سطح ثابت ومرتفع وحافظ على استقامة جسمك.","A modified push-up to build pressing strength.":"نسخة معدلة لبناء قوة الدفع.","Keep ribs controlled and lower with a steady tempo.":"حافظ على ثبات الجذع وانزل بإيقاع منتظم.","A narrower hand position emphasizes the triceps.":"تقارب اليدين يركز أكثر على عضلة الترايسبس.","A shoulder-focused push variation; use a comfortable range.":"نسخة دفع تركز على الكتفين؛ استخدم مدى حركة مريحاً.","A demanding triceps variation; use an easier version if needed.":"تمرين أصعب للترايسبس؛ استخدم نسخة أسهل عند الحاجة.","Sit between your hips and keep your whole foot grounded.":"انزل بالوركين وحافظ على ثبات القدم كاملة على الأرض.","Step back under control and keep the front knee comfortable.":"ارجع بقدمك للخلف بتحكم وحافظ على راحة الركبة الأمامية.","Drive through your feet and avoid over-arching your back.":"ادفع من القدمين وتجنب تقويس الظهر أكثر من اللازم.","Rise and lower slowly through a comfortable range.":"ارفع جسمك وأنزله ببطء ضمن مدى مريح.","Hold a comfortable squat position against a wall.":"حافظ على وضعية جلوس مريحة مستنداً إلى الحائط.","Progression for glute strength; keep hips level.":"تطوير لقوة الأرداف؛ حافظ على استواء الحوض.","Lie face down and move arms slowly without forcing the shoulders.":"استلقِ على بطنك وحرك الذراعين ببطء دون إجهاد الكتفين.","Lift arms into a W shape while keeping your neck relaxed.":"ارفع الذراعين على شكل W مع إرخاء الرقبة.","A floor-based shoulder and upper-back control drill.":"تمرين أرضي للتحكم بالكتفين وأعلى الظهر.","One hand provides gentle resistance to the other; move slowly.":"استخدم إحدى اليدين لمقاومة الأخرى بلطف وتحرك ببطء.","Use the opposite hand for light resistance; avoid pain.":"استخدم اليد الأخرى لمقاومة خفيفة وتجنب الألم.","Keep a straight line from shoulders to heels; breathe normally.":"حافظ على خط مستقيم من الكتفين إلى الكعبين وتنفس بشكل طبيعي.","Move opposite arm and leg while keeping the lower back controlled.":"حرك الذراع والرجل المتعاكستين مع تثبيت أسفل الظهر.","Curl the pelvis gently; avoid swinging your legs.":"ارفع الحوض بلطف وتجنب تأرجح الرجلين.","Move one knee at a time while keeping shoulders stable.":"حرك ركبة واحدة في كل مرة مع ثبات الكتفين.","Use a bent-knee version first; keep the back comfortable.":"ابدأ بنسخة الركبتين المثنيتين وحافظ على راحة ظهرك.","Start from bent knees if the full variation is too difficult.":"ابدأ والركبتان مثنيتان إذا كانت النسخة الكاملة صعبة.","Balance practice; use a soft floor and avoid pressure if wrists hurt.":"تدريب على التوازن؛ استخدم أرضية لينة وتوقف إذا آلمك الرسغ.","Requires arm support, shoulder strength and gradual progressions.":"يحتاج إلى دعم الذراعين وقوة الكتفين والتدرج.","Only with a properly installed, weight-rated pull-up bar.":"يُؤدى فقط باستخدام عقلة مثبتة بشكل صحيح وتتحمل الوزن.","Use a secure low bar designed for bodyweight rows.":"استخدم باراً منخفضاً وثابتاً ومخصصاً للسحب بوزن الجسم.","A supinated-grip vertical pull using a secure pull-up bar.":"سحب عمودي بقبضة معكوسة باستخدام عقلة آمنة.","Anchor resistance bands only to a purpose-built secure anchor.":"ثبت أشرطة المقاومة فقط في نقطة تثبيت مخصصة وآمنة."
+};
+let currentLanguage="en";
+function translateText(value){const key=value.trim();if(!key)return value;const translated=translations[key];if(!translated)return value;return value.replace(key,translated);}
+function setLanguage(lang){
+ currentLanguage=lang;document.body.classList.toggle("rtl",lang==="ar");document.documentElement.lang=lang;document.documentElement.dir=lang==="ar"?"rtl":"ltr";
+ const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let node;
+ while(node=walker.nextNode()){
+   if(!node.parentElement || node.parentElement.closest("script,style"))continue;
+   if(node.__redlineOriginalText===undefined)node.__redlineOriginalText=node.textContent;
+   const original=node.__redlineOriginalText;
+   node.textContent=lang==="ar"?translateText(original):original;
+ }
+ document.querySelectorAll("[placeholder]").forEach(el=>{if(!el.dataset.enPlaceholder)el.dataset.enPlaceholder=el.placeholder;el.placeholder=lang==="ar"?(translations[el.dataset.enPlaceholder]||el.dataset.enPlaceholder):el.dataset.enPlaceholder;});
+ const btn=document.getElementById("langToggle");btn.textContent=lang==="ar"?"English":"العربية";
+ renderLibrary();
+ if(typeof updateProgress==="function")updateProgress();
+ if(document.getElementById("workouts").children.length){const level=document.getElementById("level").value,days=document.getElementById("days").value,equip=document.getElementById("equipment").value;renderPlan(level,days,equip);}
+ if(lang==="ar"){document.querySelectorAll(".exercise-card .meta").forEach(el=>{el.textContent=translateText(el.textContent.replace(" • "," • "));});}
+}
+document.getElementById("langToggle").addEventListener("click",()=>setLanguage(currentLanguage==="en"?"ar":"en"));
+
+</script>
+</body></html>
